@@ -7,7 +7,6 @@ Usage Examples
 --------------
 
 .Basic Example
-[source,JavaScript]
 ----
 /**
  * Like just run this. It should be self explanitory 
@@ -28,7 +27,6 @@ var promise = cache.get('my testing data', function(callback) {
 ----
 
 .Multiple Callback Handlers on the Promise
-[source,JavaScript]
 ----
 promise.fulfilled(function(results) {
    console.log("Callback 1: " + results);
@@ -40,7 +38,6 @@ promise.fulfilled(function(results) {
 ----
 
 .Fluent Interfaces
-[source,javascript]
 ----
 promise.fulfilled(function(results) {
     console.log("Fluent interface 1");
