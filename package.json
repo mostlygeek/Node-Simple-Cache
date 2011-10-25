@@ -1,0 +1,11 @@
+{ "name": "Simple-Cache"
+, "version": "1.0.0"
+, "description": "It is a really simple disk caching library"
+, "homepage": "https://github.com/mostlygeek/Node-Simple-Cache"
+, "repository": 
+  { "type": "git"
+  , "url": "git://github.com/mostlygeek/Node-Simple-Cache.git" }
+, "dependencies": {}
+, "devDependencies": {}
+, "author": "Benson Wong <mostlygeek@gmail.com> (http://mostlygeek.com/)"
+}
