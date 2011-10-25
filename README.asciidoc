@@ -1,6 +1,3 @@
-node.js Simple Caching Library
-==============================
-
 About
 -----
 A *really* simple cache to disk library. It will either return data from the 
@@ -31,7 +28,7 @@ var promise = cache.get('my testing data', function(callback) {
 ----
 
 .Multiple Callback Handlers on the Promise
-[source,javascript]
+[source,JavaScript]
 ----
 promise.fulfilled(function(results) {
    console.log("Callback 1: " + results);
