@@ -28,11 +28,18 @@ exports.Cache = function(cacheDir, debug)
                 
                 resolve : function(results)
                 {
+                    if (this.done) {
+                        return; // a bit of safety :)
+                    }
+                    
                     var cb;
-                    this.results = results;
                     while(cb = this.cbs.shift()) {
                         cb.call(this, results);
                     }
+                    
+                    this.results = results;
+                    this.done = true;
+
                 }, 
                 
                 /**
@@ -49,6 +56,8 @@ exports.Cache = function(cacheDir, debug)
                     } else {
                         this.cbs.push(cb);
                     }
+                    
+                    return this;
                 }                
             };
             
