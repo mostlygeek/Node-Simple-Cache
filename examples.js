@@ -62,3 +62,30 @@ setTimeout(function() {
         console.log("Late callback 3: " + results);
     });
 }, 1600);
+
+
+/**
+ * 
+ * A Practical example. Cachine Web results.
+ * 
+ */
+cache.get('omgz! the same file!', function(callback) {
+    
+    console.log("Fetching from https://raw.github.com/...");
+    
+    require('https').get({
+        host : 'raw.github.com', 
+        path : '/mostlygeek/Node-Simple-Cache/master/examples.js'
+    }, function(res) {           
+       var data = '';
+
+       res.on('data', function(chunk) {
+          data += chunk; 
+       }).on('end', function() {
+           callback(data);
+       });
+    });    
+}).fulfilled(function(data) {
+    console.log("Blam!, Got back " + data.length + " bytes");
+});
+
