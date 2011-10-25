@@ -2,7 +2,7 @@
  * Like just run this. It should be self explanitory 
  * how it works. 
  */
-var cache = require('./Cache.js').Cache("/tmp", console.log);
+var cache = require('./SimpleCache.js').SimpleCache("/tmp", console.log);
 
 /**
  *  cache.get returns a promise, cause tons of callback chains

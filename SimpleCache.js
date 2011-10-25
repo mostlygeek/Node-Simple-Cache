@@ -1,6 +1,6 @@
 var fs = require('fs');
 
-exports.Cache = function(cacheDir, debug)
+exports.SimpleCache = function(cacheDir, debug)
 {
     var stats = fs.lstatSync(cacheDir); 
     if (!stats.isDirectory()) {

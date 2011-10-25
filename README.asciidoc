@@ -3,6 +3,14 @@ About
 A *really* simple cache to disk library. It will either return data from the 
 disk cache file or fetch it from the source. 
 
+Install
+-------
+
+.Even a Monkey Can Do It!
+----
+> npm install Simple-Cache
+----
+
 Usage Examples
 --------------
 
