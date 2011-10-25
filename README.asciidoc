@@ -7,7 +7,7 @@ Usage Examples
 --------------
 
 .Basic Example
-[source,javascript]
+[source,JavaScript]
 ----
 /**
  * Like just run this. It should be self explanitory 
