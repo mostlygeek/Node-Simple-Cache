@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/mostlygeek/Node-Simple-Cache.png)](http://travis-ci.org/mostlygeek/Node-Simple-Cache)
 About
 -----
 A *really* simple cache to disk library. It will either return data from the 
